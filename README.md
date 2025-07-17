@@ -27,14 +27,14 @@ Tutorials for each day of BAMB! 2025. Each folder contains two tutorial versions
 
 - Tutorials
   - Part 1: Introduction and Bayesian Brain
-    - Instructions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day%203%3A%20Bayes/Bayes_Tutorial_Part1_Instructions.ipynb)
-    - Solutions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day%203%3A%20Bayes/Bayes_Tutorial_Part1_Solutions.ipynb)
-    - [Slides](https://github.com/bambschool/BAMB2025/blob/main/Day%203%3A%20Bayes/BAMB_bayes_tutorial_part1.pdf)
+    - Instructions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_3_Bayes/Bayes_Tutorial_Part1_Instructions.ipynb)
+    - Solutions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_3_Bayes/Bayes_Tutorial_Part1_Solutions.ipynb)
+    - [Slides](./Day_3_Bayes/BAMB_bayes_tutorial_part1.pdf)
 
   - Part 2: Complex behavior and connections
-    - Instructions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day%203%3A%20Bayes/Bayes_Tutorial_Part2_Instructions.ipynb#scrollTo=yugIvo_6cYpg)
-    - Solutions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2024/blob/main/Day%203%3A%20Bayes/Bayes_Tutorial_Part2_Solutions.ipynb)
-    - [Slides](https://github.com/bambschool/BAMB2025/blob/main/Day%203%3A%20Bayes/BAMB_bayes_tutorial_part2.pdf)
+    - Instructions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_3_Bayes/Bayes_Tutorial_Part2_Instructions.ipynb#scrollTo=yugIvo_6cYpg)
+    - Solutions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2024/blob/main/Day_3_Bayes/Bayes_Tutorial_Part2_Solutions.ipynb)
+    - [Slides](./Day_3_Bayes/BAMB_bayes_tutorial_part2.pdf)
 
 ## Day 4: Latent variable models and expectation maximization (EM)
 
