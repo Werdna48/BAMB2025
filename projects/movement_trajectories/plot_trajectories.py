@@ -665,96 +665,17 @@ def trajs_splitting_stim(df, ax, data_folder, collapse_sides=True, threshold=300
     return np.nanmedian(out_data.reshape(rtbins.size-1, -1), axis=1)
 
 
-def fig_2_trajs(df, fgsz=(8, 12),
+def fig_2_trajs(df, fgsz=(8, 4),
                 inset_sz=.1, marginx=-.04, marginy=0.1, subj='LE41'):
     """
     Altogether, plots figure 2 with all panels.
     """
-    f, ax = plt.subplots(4, 3, figsize=fgsz)
+    f, ax = plt.subplots(1, 2, figsize=fgsz)
     # add letters to panels
-    letters = 'abcdehfgXij'
     ax = ax.flatten()
-    for lett, a in zip(letters, ax):
-        if lett != 'X' and lett != 'h' and lett != 'j':
-            af.add_text(ax=a, letter=lett, x=-0.1, y=1.2)
-        if lett == 'h':
-            af.add_text(ax=a, letter=lett, x=-0.1, y=.7)
-        if lett == 'j':
-            af.add_text(ax=a, letter=lett, x=-0.1, y=1.34)
-    ax[8].axis('off')
-    # adjust panels positions
-    plt.subplots_adjust(top=0.95, bottom=0.05, left=0.075, right=0.98,
-                        hspace=0.5, wspace=0.4)
-    factor = 1.
-    for i_ax in [3, 4, 6, 7]:
-        pos = ax[i_ax].get_position()
-        if i_ax in [3, 6]:
-            ax[i_ax].set_position([pos.x0, pos.y0, pos.width*factor,
-                                    pos.height])
-        else:
-            ax[i_ax].set_position([pos.x0+pos.width/8, pos.y0, pos.width*factor,
-                                    pos.height])
-    # add insets
-    ax = f.axes
-    ax_zt = np.array([ax[3], ax[6]])
-    ax_cohs = np.array([ax[4], ax[7]])
-    ax_inset = af.add_inset(ax=ax_cohs[1], inset_sz=inset_sz, fgsz=fgsz,
-                            marginx=marginx, marginy=marginy, right=True)
-    ax_inset.yaxis.set_ticks_position('none')
-    # ax_cohs contains in this order the axes for:
-    # index 0: mean position of rats conditioned on stim. evidence,
-    # index 1: the inset for the velocity panel (peak)
-    # index 2: mean velocity  of rats conditioned on stim. evidence
-    ax_cohs = np.insert(ax_cohs, 1, ax_inset)
-    ax_inset = af.add_inset(ax=ax_zt[1], inset_sz=inset_sz, fgsz=fgsz,
-                            marginx=marginx, marginy=marginy, right=True)
-    ax_inset.yaxis.set_ticks_position('none')
-    ax_zt = np.insert(ax_zt, 1, ax_inset)
-    # ax_zt contains in this order the axes for:
-    # index 0: mean position of rats conditioned on prior evidence,
-    # index 1: the inset for the velocity panel  (peak)
-    # index 2: mean velocity  of rats conditioned on priors evidence
-    ax_weights = ax[2]
-    pos = ax_weights.get_position()
-    ax_weights.set_position([pos.x0, pos.y0+pos.height/4, pos.width,
-                             pos.height*1/2])
-    for i_a, a in enumerate(ax):
-        if i_a != 8:
-            af.rm_top_right_lines(a)
-    margin = 0.05
-    # tune screenshot panel
-    ax_scrnsht = ax[0]
-    ticks = np.array([0, 206])
-    conv_factor = 5.25/180
-    labs = np.int64(np.round(ticks*conv_factor, 2))
-    ax_scrnsht.set_xticks(ticks, labs)
-    right_port_y = 70
-    center_port_y = 250
-    left_port_y = 440
-    conv_factor = 0.07
-    ticks = np.array([-5, 0, 5])/conv_factor
-    labs = np.int64(np.round(ticks*conv_factor, 2))
-    ticks_scrn = [78, center_port_y, 432]
-    ax_scrnsht.set_yticks(ticks_scrn, labs)
-    ax_scrnsht.set_xlabel('x dimension (cm)')
-    ax_scrnsht.set_ylabel('y dimension (cm)')
-    # add colorbar for screenshot
-    n_stps = 100
-    pos = ax_scrnsht.get_position()
-    ax_clbr = plt.axes([pos.x0+margin/2, pos.y0+pos.height+margin/8,
-                        pos.width*0.7, pos.height/15])
-    ax_clbr.imshow(np.linspace(0, 1, n_stps)[None, :], aspect='auto')
-    x_tcks = np.linspace(0, n_stps, 5)
-    ax_clbr.set_xticks(x_tcks)
-    x_tcks_str = ['0', '', '', '', str(int(2.5*n_stps))]
-    x_tcks_str[-1] += ' ms'
-    ax_clbr.set_xticklabels(x_tcks_str)
-    ax_clbr.tick_params(labelsize=8)
-    ax_clbr.set_yticks([])
-    ax_clbr.xaxis.set_ticks_position("top")
     # tune trajectories panels
-    ax_rawtr = ax[1]
-    ax_ydim = ax[2]
+    ax_rawtr = ax[0]
+    ax_ydim = ax[1]
     x_lim = [-80, 20]
     y_lim = [-100, 100]
     ax_rawtr.set_xlim(x_lim)
@@ -769,11 +690,8 @@ def fig_2_trajs(df, fgsz=(8, 12),
     ax_rawtr.set_yticks(ticks, labs)
     ax_rawtr.set_xlabel('x dimension (cm)')
     ax_rawtr.set_ylabel('y dimension (cm)')
-    pos_coh = ax_cohs[2].get_position()
     pos_rawtr = ax_rawtr.get_position()
-    ax_rawtr.set_position([pos_coh.x0, pos_rawtr.y0,
-                           pos_rawtr.width/1.3, pos_rawtr.height])
-    ax_rawtr.text(x=0.4, y=1., s='rat LE46', transform=ax_rawtr.transAxes,
+    ax_rawtr.text(x=0.4, y=1., s='rat LE41', transform=ax_rawtr.transAxes,
                   fontsize=10, va='top', ha='right')
     x_lim = [-100, 800]
     y_lim = [-100, 100]
@@ -784,26 +702,8 @@ def fig_2_trajs(df, fgsz=(8, 12),
     pos_ydim = ax_ydim.get_position()
     ax_ydim.set_position([pos_ydim.x0, pos_rawtr.y0,
                           pos_ydim.width, pos_rawtr.height])
-    ax_ydim.text(x=0.32, y=1., s='rat LE46', transform=ax_ydim.transAxes,
+    ax_ydim.text(x=0.32, y=1., s='rat LE41', transform=ax_ydim.transAxes,
                  fontsize=10, va='top', ha='right')
-    # tune splitting time panels
-    factor_y = 0.622
-    factor_x = 0.8
-    ax_cartoon = ax[5]
-    ax_cartoon.axis('off')
-    pos = ax_cartoon.get_position()
-    ax_cartoon.set_position([pos.x0+pos.width/8, pos.y0+pos.height*factor_y*0.9,
-                              pos.width*0.9, pos.height*0.9])
-    ax_top = plt.axes([.1, .1, .1, .1])
-    ax_middle = plt.axes([.2, .2, .1, .1])
-    ax_bottom = plt.axes([.3, .3, .1, .1])
-    for i_a, a in enumerate([ax_top, ax_middle, ax_bottom]):
-        a.set_position([pos.x0+pos.width/4, 0.06+pos.y0-(i_a)*pos.height*factor_y*1.5,
-                        pos.width*factor_x, pos.height*factor_y])
-        af.rm_top_right_lines(a)
-    # move ax[10] (spllting time coherence) to the right
-    pos = ax[10].get_position()
-
     # TRAJECTORIES
     df_subj = df[df.subjid == subj]
     ran_max = 100
@@ -816,9 +716,9 @@ def fig_2_trajs(df, fgsz=(8, 12),
             time = trial['time_trajs']
             ax_ydim.plot(time, traj_y, color='grey', lw=.5, alpha=0.6)
     # plot dashed lines
-    for i_a in [1, 2]:
+    for i_a in [0, 1]:
         ax[i_a].axhline(y=75, linestyle='--', color='k', lw=.5)
         ax[i_a].axhline(y=-75, linestyle='--', color='k', lw=.5)
         ax[i_a].axhline(0, color='k', lw=.5)
 
-    df_trajs = df.copy()
+    plt.show()
