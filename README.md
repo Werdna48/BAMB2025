@@ -36,7 +36,16 @@ Tutorials for each day of BAMB! 2025. Each folder contains two tutorial versions
     - Solutions: [![Open in Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_3_Bayes/Bayes_Tutorial_Part2_Solutions.ipynb)
     - [Slides](./Day_3_Bayes/BAMB_bayes_tutorial_part2.pdf)
 
-## Day 4: Latent variable models and expectation maximization (EM)
+
+## Day 4: Latent variable models
+
+- Tutorials
+  - Part 1: Mixture models and the general expectation maximization algorithm
+    - instructions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/mixture-models-EM.ipynb)
+    - solutions [![solutions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/mixture-models-EM_solutions.ipynb)
+  - Part 2: Hidden Markov models
+    - instructions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/hidden-markov-models.ipynb)
+   - solutions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/hidden-markov-models_solutions.ipynb)
 
 ## Day 6: Drift-diffusion model (DDM)
 
