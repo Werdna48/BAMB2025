@@ -20,4 +20,4 @@ df = pandas.read_csv("data.csv")
 df.drop(["trial_number", "LeftImage", "RightImage", "Choice", "Choice2", "RT", "pre_post"], axis=1).drop_duplicates().to_csv("participants.csv", index=False)
 
 # Simplified version of the data file
-df[['trial_number', 'Choice2', 'RT', 'pre_post', 'Condition', 'LeftImage', 'RightImage', 'Choice']].rename({"Choice2": "choice", "Choice": "choice_identity"}, axis=1).to_csv("trials.csv", index=False)
+df[['pid', 'trial_number', 'Choice2', 'RT', 'pre_post', 'Condition', 'LeftImage', 'RightImage', 'Choice']].rename({"Choice2": "choice", "Choice": "choice_identity"}, axis=1).to_csv("trials.csv", index=False)
