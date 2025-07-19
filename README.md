@@ -46,7 +46,7 @@ Tutorials for each day of BAMB! 2025. Each folder contains two tutorial versions
   - Part 2: Hidden Markov models
     - instructions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/hidden-markov-models.ipynb)
     - solutions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/hidden-markov-models_solutions.ipynb)
-  - [slides] (https://github.com/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/BAMB!%20latent%20variable%20models.pdf)
+  - [slides](https://github.com/bambschool/BAMB2025/blob/main/Day_4_latent_variable_models/BAMB!%20latent%20variable%20models.pdf)
 
 ## Day 6: Drift-diffusion model (DDM)
 
