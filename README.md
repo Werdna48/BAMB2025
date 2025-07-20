@@ -50,4 +50,8 @@ Tutorials for each day of BAMB! 2025. Each folder contains two tutorial versions
 
 ## Day 6: Drift-diffusion model (DDM)
 
+- Tutorial
+  - instructions [![instructions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_6_DDM/bamb_tutorial5_ddm.ipynb)
+  - solutions [![solutions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_6_DDM/bamb_tutorial5_ddm_solutions.ipynb)
+
 ## Day 7: Neural Networks
