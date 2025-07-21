@@ -55,3 +55,9 @@ Tutorials for each day of BAMB! 2025. Each folder contains two tutorial versions
   - solutions [![solutions](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_6_DDM/bamb_tutorial5_ddm_solutions.ipynb)
 
 ## Day 7: Neural Networks
+
+- [Tutorial instructions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-instructions.ipynb)
+- [Tutorial solutions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-solutions.ipynb)
+- [Tutorial instructions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-instructions.ipynb)
+- [Tutorial solutions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-solutions.ipynb)
+
