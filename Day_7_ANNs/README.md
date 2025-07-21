@@ -36,10 +36,10 @@ In the second part of the tutorial we will learn how to use recurrent neural net
 
 - [Lecture slides]()
 - [Tutorial slides](https://docs.google.com/presentation/d/1IgJXLB3hCKkwxIctoaZcPjJTR-q_2tCV4Of1PWSpF6I/edit?usp=sharing)
-- [Tutorial instructions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/tutorial_5_models-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/tutorial_5_models-instructions.ipynb)
-- [Tutorial solutions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/tutorial_5_models-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/tutorial_5_models-solutions.ipynb)
-- [Tutorial instructions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/tutorial_5_RNNs-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/tutorial_5_RNNs-instructions.ipynb)
-- [Tutorial solutions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/tutorial_5_RNNs-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/tutorial_5_RNNs-solutions.ipynb)
+- [Tutorial instructions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-instructions.ipynb)
+- [Tutorial solutions: Feedforward models](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_models-solutions.ipynb)
+- [Tutorial instructions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-instructions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-instructions.ipynb)
+- [Tutorial solutions: RNNs](https://github.com/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-solutions.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bambschool/BAMB2025/blob/main/Day_7_ANNs/tutorial_5_RNNs-solutions.ipynb)
 - [NeuroGym](https://neurogym.github.io/)
 - [PyTorch](https://pytorch.org/)
 
