@@ -6,7 +6,7 @@ import pandas
 # psychomotor vigilance task to measure response time
 df1 = pandas.read_csv("pvtData1.csv")
 df1['after_manipulation'] = False
-df2 = pandas.read_csv("pvtData1.csv")
+df2 = pandas.read_csv("pvtData2.csv")
 df2['after_manipulation'] = True
 df = pandas.concat([df1, df2]).sort_values("Subject", kind="stable")
 df.to_csv("pvt.csv", index=False)
